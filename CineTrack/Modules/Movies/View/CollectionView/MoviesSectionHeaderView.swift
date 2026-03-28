@@ -26,5 +26,5 @@ final class MoviesSectionHeaderView: UICollectionReusableView
         ])
     }
     
-    required init?(coder: NSCoder) { return nil }
+    required init?(coder: NSCoder) { nil }
 }

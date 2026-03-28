@@ -9,5 +9,5 @@ final class MoviesSectionBackgroundView: UICollectionReusableView
         layer.cornerRadius = 12
     }
     
-    required init?(coder: NSCoder) { return nil }
+    required init?(coder: NSCoder) { nil }
 }
