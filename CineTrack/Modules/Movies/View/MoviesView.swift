@@ -71,14 +71,14 @@ extension MoviesView
                                                                             
             let section = NSCollectionLayoutSection(group: containerGroup)
             section.orthogonalScrollingBehavior = .continuous
-            let sectionBackground = NSCollectionLayoutDecorationItem.background(elementKind: "background")
+            let sectionBackground = NSCollectionLayoutDecorationItem.background(elementKind: MoviesSectionBackgroundView.backgroundIdentifier)
             sectionBackground.contentInsets = NSDirectionalEdgeInsets(top: 40, leading: 0, bottom: 70, trailing: 0)
 
             section.boundarySupplementaryItems = [sectionHeader]
             section.decorationItems = [sectionBackground]
             return section
         }
-        layout.register(MoviesSectionBackgroundView.self, forDecorationViewOfKind: "background")
+        layout.register(MoviesSectionBackgroundView.self, forDecorationViewOfKind: MoviesSectionBackgroundView.backgroundIdentifier)
         return layout
     }
 }
